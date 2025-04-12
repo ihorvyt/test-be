@@ -19,9 +19,11 @@ export default defineConfig([
     languageOptions: {
       globals: {
         ...globals.browser,
+        ...globals.jest,  // Додаємо глобальні змінні для Jest
         describe: "readonly",
         it: "readonly",
         expect: "readonly",
+        afterAll: "readonly", // додано afterAll
       },
     },
   },
