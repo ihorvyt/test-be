@@ -7,7 +7,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "lint": "eslint .",
-    "test": "jest"
+    "test": "jest --detectOpenHandles"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +19,7 @@
     "eslint": "^9.24.0",
     "globals": "^16.0.0",
     "jest": "^29.7.0",
-    "supertest": "^7.1.0"
+    "supertest": "^7.1.0",
+    "nodemon": "^3.1.9"
   }
 }
